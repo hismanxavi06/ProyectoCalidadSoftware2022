@@ -1,0 +1,14 @@
+D:\Javier\U\UMG\10mo\Aseguramiento de la calidad\Proyecto Final\Proyecto\SistemaTienda\SistemaTienda\bin\Debug\SistemaTienda.exe.config
+D:\Javier\U\UMG\10mo\Aseguramiento de la calidad\Proyecto Final\Proyecto\SistemaTienda\SistemaTienda\bin\Debug\SistemaTienda.exe
+D:\Javier\U\UMG\10mo\Aseguramiento de la calidad\Proyecto Final\Proyecto\SistemaTienda\SistemaTienda\bin\Debug\SistemaTienda.pdb
+D:\Javier\U\UMG\10mo\Aseguramiento de la calidad\Proyecto Final\Proyecto\SistemaTienda\SistemaTienda\obj\Debug\SistemaTienda.csproj.AssemblyReference.cache
+D:\Javier\U\UMG\10mo\Aseguramiento de la calidad\Proyecto Final\Proyecto\SistemaTienda\SistemaTienda\obj\Debug\SistemaTienda.Form1.resources
+D:\Javier\U\UMG\10mo\Aseguramiento de la calidad\Proyecto Final\Proyecto\SistemaTienda\SistemaTienda\obj\Debug\SistemaTienda.Properties.Resources.resources
+D:\Javier\U\UMG\10mo\Aseguramiento de la calidad\Proyecto Final\Proyecto\SistemaTienda\SistemaTienda\obj\Debug\SistemaTienda.Sesion.resources
+D:\Javier\U\UMG\10mo\Aseguramiento de la calidad\Proyecto Final\Proyecto\SistemaTienda\SistemaTienda\obj\Debug\SistemaTienda.csproj.GenerateResource.cache
+D:\Javier\U\UMG\10mo\Aseguramiento de la calidad\Proyecto Final\Proyecto\SistemaTienda\SistemaTienda\obj\Debug\SistemaTienda.csproj.CoreCompileInputs.cache
+D:\Javier\U\UMG\10mo\Aseguramiento de la calidad\Proyecto Final\Proyecto\SistemaTienda\SistemaTienda\obj\Debug\SistemaTienda.exe
+D:\Javier\U\UMG\10mo\Aseguramiento de la calidad\Proyecto Final\Proyecto\SistemaTienda\SistemaTienda\obj\Debug\SistemaTienda.pdb
+D:\Javier\U\UMG\10mo\Aseguramiento de la calidad\Proyecto Final\Proyecto\SistemaTienda\SistemaTienda\bin\Debug\ConexcionBD.dll
+D:\Javier\U\UMG\10mo\Aseguramiento de la calidad\Proyecto Final\Proyecto\SistemaTienda\SistemaTienda\obj\Debug\SistemaTienda.csproj.CopyComplete
+D:\Javier\U\UMG\10mo\Aseguramiento de la calidad\Proyecto Final\Proyecto\SistemaTienda\SistemaTienda\obj\Debug\SistemaTienda.Menu.resources
