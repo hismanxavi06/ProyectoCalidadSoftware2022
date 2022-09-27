@@ -31,18 +31,11 @@ namespace SistemaTienda
             string usuario = bd.selectstring("select nombreusuario from usuario where nombreusuario = '" + txtUsuario.Text + "'");
             string contraseña = bd.selectstring("select contraseña from usuario where contraseña = '" + txtContraseña.Text + "'");
 
-            //ToolTip
-            ToolTip msUsuario = new ToolTip();
-            msUsuario.ShowAlways = true;
-            msUsuario.SetToolTip(txtUsuario, "Ingrese su usuario");
-            ToolTip msContraseña = new ToolTip();
-            msContraseña.ShowAlways = true;
-            msContraseña.SetToolTip(txtContraseña, "Ingrese su contraseña");
-
             if (txtUsuario.TextLength > 0 && txtContraseña.TextLength > 0)
             {
                 if (usuario == txtUsuario.Text && contraseña == txtContraseña.Text)
                 {
+                    Datos.Ac = bd.selectstring("select tipousuario from usuario where nombreusuario = '" + txtUsuario.Text + "'");
                     Menu menu = new Menu();
                     menu.Show();
                     this.Hide();

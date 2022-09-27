@@ -10,9 +10,18 @@ using System.Windows.Forms;
 
 namespace SistemaTienda
 {
-    public partial class Menu : Form
+    public partial class Productos : Form
     {
-        public Menu()
+        //Conectamos a la Base de datos
+        BaseDeDatos bd = new BaseDeDatos();
+
+        private void Productos_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = bd.SelectDataTable("select * from inventario");
+            timer1.Enabled = true;
+        }
+
+        public Productos()
         {
             InitializeComponent();
             if (Datos.Ac == "Admin")
@@ -26,13 +35,6 @@ namespace SistemaTienda
             }
         }
 
-        private void btnCerrarSesion_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form1 form1 = new Form1();
-            form1.Show();
-        }
-
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -43,8 +45,15 @@ namespace SistemaTienda
             this.WindowState = FormWindowState.Minimized;
         }
 
-        //Botones del menu
-        private void button2_Click(object sender, EventArgs e)//Productos
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 form1 = new Form1();
+            form1.Show();
+        }
+
+        //botones del menu
+        private void button2_Click(object sender, EventArgs e)//productos
         {
             this.Hide();
             Productos consulta = new Productos();
@@ -77,16 +86,6 @@ namespace SistemaTienda
         {
             lblHora.Text = DateTime.Now.ToString("hh:mm:ss");
             lblFecha.Text = DateTime.Now.ToLongDateString();
-        }
-
-        private void Menu_Load(object sender, EventArgs e)
-        {
-            timer1.Enabled = true;
-        }
-
-        private void lblFecha_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -12,3 +12,5 @@ D:\Javier\U\UMG\10mo\Aseguramiento de la calidad\Proyecto Final\Proyecto\Sistema
 D:\Javier\U\UMG\10mo\Aseguramiento de la calidad\Proyecto Final\Proyecto\SistemaTienda\SistemaTienda\bin\Debug\ConexcionBD.dll
 D:\Javier\U\UMG\10mo\Aseguramiento de la calidad\Proyecto Final\Proyecto\SistemaTienda\SistemaTienda\obj\Debug\SistemaTienda.csproj.CopyComplete
 D:\Javier\U\UMG\10mo\Aseguramiento de la calidad\Proyecto Final\Proyecto\SistemaTienda\SistemaTienda\obj\Debug\SistemaTienda.Menu.resources
+D:\Javier\U\UMG\10mo\Aseguramiento de la calidad\Proyecto Final\Proyecto\SistemaTienda\SistemaTienda\obj\Debug\SistemaTienda.Productos.resources
+D:\Javier\U\UMG\10mo\Aseguramiento de la calidad\Proyecto Final\Proyecto\SistemaTienda\SistemaTienda\obj\Debug\SistemaTienda.Inventario.resources

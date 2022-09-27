@@ -29,6 +29,7 @@ namespace SistemaTienda
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -39,8 +40,10 @@ namespace SistemaTienda
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.lblBienvenidoUsuario = new System.Windows.Forms.Label();
-            this.lblTime = new System.Windows.Forms.Label();
             this.panelDatos = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblHora = new System.Windows.Forms.Label();
+            this.lblFecha = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,10 +71,11 @@ namespace SistemaTienda
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Location = new System.Drawing.Point(700, 6);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(76, 31);
+            this.button5.Size = new System.Drawing.Size(93, 31);
             this.button5.TabIndex = 11;
-            this.button5.Text = "Opcion5";
+            this.button5.Text = "Inventario";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -87,6 +91,7 @@ namespace SistemaTienda
             this.button4.TabIndex = 10;
             this.button4.Text = "Opcion4";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -102,6 +107,7 @@ namespace SistemaTienda
             this.button3.TabIndex = 9;
             this.button3.Text = "Opcion3";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 
@@ -117,6 +123,7 @@ namespace SistemaTienda
             this.button1.TabIndex = 8;
             this.button1.Text = "Opcion2";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -132,6 +139,7 @@ namespace SistemaTienda
             this.button2.TabIndex = 7;
             this.button2.Text = "Productos";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnCerrarSesion
             // 
@@ -184,18 +192,6 @@ namespace SistemaTienda
             this.lblBienvenidoUsuario.TabIndex = 9;
             this.lblBienvenidoUsuario.Text = "Bienvenido USUSARIO";
             // 
-            // lblTime
-            // 
-            this.lblTime.AutoSize = true;
-            this.lblTime.BackColor = System.Drawing.Color.LightGray;
-            this.lblTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblTime.Font = new System.Drawing.Font("Verdana", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Location = new System.Drawing.Point(12, 6);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(211, 20);
-            this.lblTime.TabIndex = 8;
-            this.lblTime.Text = "07/08/2022   00:00:00";
-            // 
             // panelDatos
             // 
             this.panelDatos.BackColor = System.Drawing.Color.Transparent;
@@ -204,6 +200,35 @@ namespace SistemaTienda
             this.panelDatos.Size = new System.Drawing.Size(1028, 520);
             this.panelDatos.TabIndex = 7;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.BackColor = System.Drawing.Color.LightGray;
+            this.lblHora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblHora.Font = new System.Drawing.Font("Verdana", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.Location = new System.Drawing.Point(12, 22);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(88, 20);
+            this.lblHora.TabIndex = 23;
+            this.lblHora.Text = "00:00:00";
+            // 
+            // lblFecha
+            // 
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.BackColor = System.Drawing.Color.LightGray;
+            this.lblFecha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblFecha.Font = new System.Drawing.Font("Verdana", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.Location = new System.Drawing.Point(12, 2);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(118, 20);
+            this.lblFecha.TabIndex = 22;
+            this.lblFecha.Text = "07/08/2022";
+            this.lblFecha.Click += new System.EventHandler(this.lblFecha_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -211,8 +236,9 @@ namespace SistemaTienda
             this.BackgroundImage = global::SistemaTienda.Properties.Resources.App_Back;
             this.ClientSize = new System.Drawing.Size(1034, 611);
             this.ControlBox = false;
+            this.Controls.Add(this.lblHora);
+            this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.lblBienvenidoUsuario);
-            this.Controls.Add(this.lblTime);
             this.Controls.Add(this.panelDatos);
             this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.btnCerrar);
@@ -220,6 +246,7 @@ namespace SistemaTienda
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tortuga";
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -233,12 +260,14 @@ namespace SistemaTienda
         private System.Windows.Forms.Button btnMinimizar;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Label lblBienvenidoUsuario;
-        private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Panel panelDatos;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblHora;
+        private System.Windows.Forms.Label lblFecha;
     }
 }
