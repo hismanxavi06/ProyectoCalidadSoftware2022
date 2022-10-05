@@ -1,0 +1,15 @@
+***Archivo ConexcionBD.dll**
+**
+**Para que la conexion con la BD se pueda realizar, este archivo se debe de agregar como referencia al proyecto.
+**Esto lo hacemos desde el apartado References dentro de nuestra IDE de Visual Studio o cualquier otra. Se agrega la referencia
+**y se le refiere a este archivo, asi las conxiones con la BD van a funcionar. Si hay dudas, el siguiente video muentra como hacerlo:
+**https://youtu.be/qBoKoCWetkM?t=225
+*************************************************************************************************************************************
+
+***Casos de uso**
+**Los casos de uso se encuentran dentro del archivo PDF
+*************************************************************************************************************************************
+
+***script SQL BD
+**Este archivo contiene el script para poder montar la Base de Datos
+*************************************************************************************************************************************
